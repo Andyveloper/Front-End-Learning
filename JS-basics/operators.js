@@ -98,7 +98,7 @@ console.log(false == 0);
 // Case: "If a customer has 100 points, they are a 'gold' customer
 // otherwise, they're a 'silver' customer"
 console.log('Ternary Operators');
-// Glosary
+// Glossary
 // ? = 'If true'
 // : = Otherwise
 let points = 100;
