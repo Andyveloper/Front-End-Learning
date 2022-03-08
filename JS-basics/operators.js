@@ -1,11 +1,3 @@
-// Invoking the functions, in this case the parameters are called 
-// arguments
-console.log('Invoking Functions')
-greet('John', 'Smith');
-greet('Mary Anne', 'Jones');
-
-
-console.log(square(2))
 
 //Basic Arithmetic Operators: Addition, Sustraction, Multiplication
 // Division, Division Remainder and Exponentiation
@@ -123,6 +115,7 @@ console.log('Eligible', eligibleForLoan);
 
 // Logical OR (||)
 // Returns TRUE if ONE of the operands is TRUE 
+// Returns first TRUTHY found and ignores everything else.
 
 let eligibleForLoan2 = highIncome || goodCreditScore;
 console.log('Eligible', eligibleForLoan2);
@@ -134,3 +127,69 @@ console.log('Eligible', eligibleForLoan2);
 
 let applicationRefused = !eligibleForLoan;
 console.log('Application Refused ', applicationRefused);
+
+// Logical Operators with Non-booleans
+// Falsy: undefined / null / 0 / false / '' / NaN
+// Truthy: everything else
+
+// case: User gotta pick a color or we're gonna use a default one
+
+let userColor = 'red';
+let defaultColor = 'blue';
+let currentColor = userColor || defaultColor;
+
+console.log(currentColor);
+
+
+// Bitwise Operators
+
+console.log('Bitwise Operators,', 'Binary')
+// Bitwise OR |: If any number is 1, the result will be 1, otherwise its 0
+//  1 = 00000001
+//  2 = 00000010
+//  RESULT IS 3
+//  3 = 00000011
+console.log(1 | 2);
+// Bitwise AND &: If both numbers are 1, the result will be 1, otherwise its 0
+//  1 = 00000001
+//  2 = 00000010
+//  RESULT IS 0
+//  3 = 00000000
+console.log(1 & 2);
+
+// Case: You wanna implement access control systems
+// Permissions: Read, Write, Execute.
+// We can represent each permission with 8bits binary, Read is 6th bit, write 7th and execute 8th
+// 00000100 = 4
+// 00000010 = 2
+// 00000001 = 1 
+
+const readPermission = 4;
+const writePermission = 2;
+const executePermission = 1;
+
+let myPermission = 0;
+myPermission = myPermission | readPermission | writePermission;
+console.log(myPermission)
+// Its equal to 6, which in 8bits binary is 00000110
+
+let message = 
+    (myPermission & readPermission) 
+    ? 'Yes'
+    : 'No';
+
+console.log(message)
+// Seeing these is not really that common
+
+
+// Exercise, swap the values for a and b using some code
+
+let a = 'red';
+let b = 'blue';
+
+let c = a;
+a = b;
+b = c;
+
+console.log(a);
+console.log(b);

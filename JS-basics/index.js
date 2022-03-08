@@ -10,6 +10,13 @@ function square(number){
     
 }
 
+// Invoking the functions, in this case the parameters are called 
+// arguments
+console.log('Invoking Functions')
+greet('John', 'Smith');
+greet('Mary Anne', 'Jones');
 
+
+console.log(square(2))
 
     
