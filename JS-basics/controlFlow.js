@@ -248,7 +248,7 @@ console.log('exercise 4')
 // Math.floor()
 // 12 points means 'License suspended'
 
-checkSpeed(185);
+checkSpeed(180);
 
 function checkSpeed(speed){
     const speedLimit = 70;
@@ -269,6 +269,8 @@ function checkSpeed(speed){
     
     
 }
+
+
 
 // exercise 5:
 console.log('exercise 5')
@@ -311,4 +313,52 @@ function showProperties(object){
     for (let lmao2 in object)
     if (typeof object[lmao2] === 'string')
         console.log(lmao2, object[lmao2]);
+}
+
+// exercise 8
+console.log('exercise 8');
+
+// Multiples of 3: 3, 6, 9;
+// Multiples of 5: 5, 10;
+// Result must be 33
+
+console.log(sum(10))
+
+
+function sum(limit){
+    let sum = 0
+
+    for (let i = 0; i <= limit; i++);
+        if(i % 3 === 0 || i % 5 === 0);
+            sum += i;        
+
+    return sum;
+}
+
+// exercise 9
+console.log('exercise 9');
+
+const marks = [40, 10, 10];
+
+
+console.log(calculateGrade(marks))
+
+function calculateGrade(marks){
+
+    const average = calculateAverage(marks)
+    if (average < 60) return 'F';
+    if (average < 70) return 'D';
+    if (average < 80) return 'C';
+    if (average < 90) return 'B';
+    return 'A';     
+}
+
+function calculateAverage(averageArray){
+
+    let sum = 0;
+    for (let value of averageArray)
+        sum += value;
+    return sum / averageArray.lenght;
+    
+
 }
