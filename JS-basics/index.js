@@ -1,3 +1,4 @@
+// console.log() prints whatever the parameter is into the console in a browser
 // Function that performs a task
 function greet(name, lastName){
     console.log('Hello World ' + name + ' ' + lastName);
