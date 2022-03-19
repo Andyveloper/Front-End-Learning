@@ -402,8 +402,8 @@ console.log('exercise5')
 
 const numbers3 = [1, 2, 3, 4, 1, 3, 3, 3, 3];
 
-const count = countOccurrences(numbers3, 3);
-const count2 = countOccurrences2(numbers3, 3);
+const count = countOccurrences(numbers3, 1);
+const count2 = countOccurrences2(numbers3, 1);
 
 console.log(count);
 console.log(count2);
