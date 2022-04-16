@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap');
+
+*{
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+body{
+  background-color: #f5f5f5;
+
+}
+
+nav{
+  width: 100%;
+  background-color: white;
+  display: flex;
+  margin: 0;
+  padding: 0.5rem;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  justify-content: space-between;
+}
+
+.logo {
+  max-width: 96px;
+  height: auto;
+  /* justify-content: left; */
+  margin-left: 1rem;
+}
+
+.burgermenu {
+  max-width: 25px;
+  height: auto;
+  margin-left: 1rem;
+}
+
+.rightmenu {
+  max-width: 23px;
+  height: auto;
+  margin: 0 1rem;
+}
+
+.nostyle{
+all: unset;
+background-color: transparent;
+cursor: pointer;
+}
+
+.searchbutton{
+  max-width: 20px;
+  height: auto;
+}
+
+.pointer{
+  cursor: pointer;
+  height: 100%;
+  border: 1 solid;
+  width: 60px;
+  
+}
+
+#form{
+  /* background-color: #4654e1; */
+  width: 600px;
+  height: 39px;
+  border-radius: 1px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border: 1px solid;
+  border-color: gray;
+  
+}
+#query{
+  /* width: 10rem; */
+  all: unset;
+  font: 16px system-ui;
+  color: #fff;
+  height: 100%;
+  width: 100%;
+  padding: 6px 10px;
+}
+
+#columns{
+  display: flex;
+  flex-direction: row;
+  
+}
+
+#primary{
+  margin-left: 5%;
+  margin-right: 1rem;
+  margin-top: 5rem;
+}
+
+#secondary{
+  margin-left: 1rem;
+  margin-right: 5%;
+  margin-top: 5rem;
+}
+
+.videotitle{
+  
+  font-size: 1.1rem;
+  line-height: 2.6rem;
+  font-weight: 500;
+  max-height: 3.2rem;
+  overflow: hidden;
+}
+
+.videotitlecontainer{
+  padding: 20 0 8 0;
+  display: block;
+}
+
+.viewscontainer{
+  display: flex;
+  border-bottom: 1px solid lightgray;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.views{
+  color: #858585;
+  
+  font-weight: 300;
+  font-size: 15px;
+  margin: 10px 0px;
+  
+}
+
+.rightstats{
+  display: flex;
+  gap: 1rem;
+  
+}
+.stats{
+  color: black;
+  font-weight: 400;
+  
+}
+
+.thumbnail{
+  display: flex;
+  padding: 3px;
+  margin-bottom: 1px;
+  align-items: center;
+  gap: 2px;
+}
+
+.thumbnailimg{
+  width: 180px;
+  height: auto;
+  margin-right: 0.5rem;
+}
+
+.thumbtitle{
+  
+  font-weight: 500;
+  font-size: 16px;
+  margin-bottom: 0.3rem;
+}
+.subthumb{
+  color: rgb(102, 102, 102);
+  
+  font-size: 13px;
+}
